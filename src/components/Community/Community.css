@@ -1,0 +1,130 @@
+.Container{
+    width: 100vw;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.firstImage{
+    height: 340px;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.firstData{
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 70px;
+    flex-wrap: wrap;
+}
+
+.Title{
+    font-size: 90px;
+    font-weight: lighter;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -5px 0px -5px 0px;
+}
+
+.firstText{
+    margin: 0px 14px 0px 14px;
+    overflow-y: hidden;
+}
+
+.secondData{
+    margin-top: 20px;
+}
+
+.Option{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.SmallContainer{
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px 20px 0px 20px;
+    min-width: 200px;
+}
+
+.Button{
+    width: 6vw;
+    font-size: 16px;
+    padding: 8px 0px 8px 0px;
+    margin-bottom: 20px;
+    min-width: 170px;
+    cursor: pointer;
+    background-color: rgba(30,108,147,1);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    text-decoration: none;
+}
+
+.Button:hover{
+    box-shadow: 1px 2px 2px 2px rgb(210, 210, 210);
+}
+
+.TextTemp{
+    width: 150px;
+}
+
+.Icon{
+    width: 8vw;
+    min-width: 140px;
+    margin-bottom: 25px;
+}
+
+.Footer{
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(30,108,147,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.ButtonLast{
+    width: 22vw;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px 10px 0px;
+    min-width: 170px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgba(30,108,147,1);
+    border-radius: 5px;
+    border-style: none;
+    text-decoration: none;
+}
+
+.ButtonLast:hover{
+    box-shadow: 0px 2px 2px 2px rgb(148, 219, 255);
+}
+
+@media (max-width: 900px) {
+    .firstImage{
+        height: 300px;
+    }
+    .Title{
+        font-size: 62px;
+    }
+    .ButtonLast{
+        width: 90vw;
+        font-size: 15px;
+    }
+}

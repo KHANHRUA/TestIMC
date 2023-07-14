@@ -1,0 +1,49 @@
+.Container{
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextContain{
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+}
+
+.IconContain{
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IconContain:hover{
+    background-color: rgba(0, 0, 0, 0.095);
+}
+
+.Icon{
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 600px) {
+    h5 {
+        font-size: 8px;
+    }
+    h3{
+        font-size:12px;
+    }
+}

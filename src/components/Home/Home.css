@@ -1,0 +1,551 @@
+.Container{
+    width: 100vw;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.firstImage{
+    height: 440px;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.firstData{
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    height: 440px;
+    align-items: center;
+    top: 0px;
+    flex-wrap: wrap;
+}
+
+.Title{
+    font-size: 90px;
+    font-weight: lighter;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px !important;
+}
+
+.firstText{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Option{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SmallContainer{
+    display: flex;
+    flex-direction: column;
+    width: 14vw;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+    min-width: 250px;
+}
+
+.Button{
+    width: 14vw;
+    font-size: 16px;
+    padding: 8px 0px 8px 0px;
+    margin-top: 25px;
+    min-width: 250px;
+    cursor: pointer;
+    background-color: white;
+    color: rgba(30,108,147,1);
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 600;
+}
+
+.Button:hover{
+    box-shadow: 0px 2px 2px 2px rgb(148, 219, 255);
+}
+
+.white{
+    margin-top: 10px;
+    text-align: start;
+}
+
+.Data{
+    text-align: end;
+    color: white;
+}
+
+.Align{
+    margin-bottom: 35px;
+    font-weight: 200;
+}
+
+.secondData{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.swiper {
+    width: 50vw;
+    height: 500px;
+}
+
+.swiper:hover{
+    .Change{
+        display: flex;
+    }
+}
+
+.swiper-container{
+    height: 500px;
+}
+
+.swiper-slide{
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.Img{
+    width: 50vw;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+.Change{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.436);
+    display: none;
+}
+.Change:hover{
+    box-shadow: 2px 2px 10px 2px rgb(66, 66, 66);
+    background-color: rgba(42, 42, 42, 0.436);
+}
+
+.Change::after,
+.Change::before{
+    font-size: 22px;
+    color: white;
+}
+
+.firstFooter{
+    width: 100vw;
+    height: auto;
+    background-color: rgba(30,108,147,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    text-align: start;
+    padding: 20px;
+}
+
+.Text{
+    width: 60vw;
+}
+
+.Li{
+    margin: 10px;
+    font-weight: 400;
+}
+
+.secondFooter{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(30,108,147,1);
+    padding: 50px;
+}
+
+.secondText{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    right: 25vw;
+}
+
+.thirdFooter{
+    width: 100vw;
+    height: auto;
+    background-color: rgba(30,108,147,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    text-align: start;
+    padding: 20px;
+}
+
+.thirdText{
+    width: 60vw;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.br{
+    margin-top: 20px;
+}
+
+.newOption{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.newContent{
+    width: 18vw;
+    font-size: 24px;
+    height: auto;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+    margin-bottom: 20px;
+    min-width: 250px;
+    cursor: pointer;
+    color: rgba(30,108,147,1);
+    border-radius: 5px;
+    border-style: none;
+}
+
+.newSmallContainer{
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    text-align: center;
+    font-size: 16px;
+    margin: 0px 20px 0px 20px;
+    min-width: 250px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.fourthFooter{
+    width: 100vw;
+    height: auto;
+    background-color: rgba(30,108,147,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 50px;
+}
+
+.fourthText{
+    width: 60vw;
+    text-align: start;
+    font-size: 32px;
+}
+
+.pictureContain{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 30px;
+}
+
+.pictures{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Picture{
+    width: 10vw;
+}
+
+.secondPictureContain{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 30px;
+    background-color: rgba(242,242,242,1);
+    padding: 25px;
+}
+
+.secondPictures{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    flex-wrap: wrap;
+}
+
+.secondPicture{
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.fifthFooter{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(30,108,147,1);
+    padding: 30px;
+    color: white;
+}
+
+.Left{
+    width: 30vw;
+}
+
+.Left1{
+    width: 15vw;
+}
+
+.Right{
+    width: 30vw;
+    text-align: center;
+    font-weight: 600;
+}
+
+.Right1{
+    width: 30vw;
+    text-align: left;
+    font-weight: 100;
+    background-color: rgba(242,242,242,1);
+    color: rgb(96, 96, 96);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Text1{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.sixthFooter{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.seventhFooter{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.Last{
+    display: flex;
+    width: 22vw;
+    justify-content: space-between;
+}
+
+.Bold{
+    font-weight: 900;
+    color: black;
+}
+
+.Middle{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    margin: 30px 0px 30px 0px;
+}
+
+.Example{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextExampleAlign{
+    width: 100vw;
+    background-color: rgba(242,242,242,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.TextExample{
+    width: 60vw;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ImgExample{
+    padding: 30px;
+    width: 65vw;
+}
+
+.ImgEx{
+    width: 60vw;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1100px) {
+    .firstText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+    }
+    .firstImage{
+        height: 1000px;
+    }
+
+    .firstData{
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .Img{
+        width: 90vw;
+        height: 230px;
+    }
+
+    .swiper {
+        width: 90vw;
+        height: 230px;
+    }
+    .Title{
+        font-size: 55px;
+    }
+    .Align{
+        margin-right: 18px;
+    }
+    .firstText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+    }
+    .firstImage{
+        height: 900px;
+    }
+
+    .firstData{
+        height: auto;
+        font-size: 0.7em;
+    }
+
+    .Text{
+        width: 80vw;
+        font-size: 16px;
+    }
+
+    .Text1{
+        font-size: 32px;
+    }
+
+    .thirdText{
+        width: 80vw;
+        font-size: 16px;
+    }
+
+    .pictures{
+        width: 90vw;
+    }
+
+    .Picture{
+        width: 25vw;
+    }
+    .secondPictures{
+        width: 80vw;
+    }
+    .secondPicture{
+        width: 30vw;
+    }
+
+    .Left{
+        width: 80vw;
+    }
+    
+    .Right{
+        width: 80vw;
+    }
+
+    .fifthFooter{
+        flex-direction: column;
+    }
+
+    .sixthFooter{
+        flex-direction: column;
+    }
+
+    .seventhFooter{
+        flex-direction: column;
+    }
+
+    .Left1{
+        width: 70vw;
+    }
+    
+    .Middle{
+        width: 70vw;
+    }
+
+    .Right1{
+        width: 70vw;
+    }
+
+    .Last{
+        width: 60vw;
+        flex-wrap: wrap;
+    }
+
+    .ImgEx{
+        width: 90vw;
+    }
+
+    .TextExample{
+        width: 60vw;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .ImgExample{
+        width: 100vw;
+    }
+
+    .Last{
+        width: 60vw;
+        font-size: smaller;
+    }
+}

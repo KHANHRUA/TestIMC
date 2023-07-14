@@ -1,0 +1,123 @@
+.Container{
+    width: 100vw;
+    height:auto;
+    background-color: white;
+}
+
+.firstImage{
+    height: 340px;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.firstData{
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 0px;
+    flex-wrap: wrap;
+    top: 100px;
+}
+
+.secondImage{
+    height: 4.5vw;
+    min-height: 80px;
+    object-fit: cover;
+    padding: 0px 15px 0px 15px;
+}
+
+.Title{
+    font-size: 90px;
+    font-weight: lighter;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.firstText{
+    margin: 0px 14px 0px 14px;
+}
+
+.secondData{
+    margin-top: 20px;
+}
+
+.Option{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.SmallContainer{
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+    min-width: 250px;
+}
+
+.Button{
+    width: 18vw;
+    font-size: 16px;
+    padding: 8px 0px 8px 0px;
+    margin-bottom: 20px;
+    min-width: 250px;
+    cursor: pointer;
+    background-color: rgba(30,108,147,1);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.Button:hover{
+    box-shadow: 0px 2px 2px 2px rgb(210, 210, 210);
+}
+
+.GgContain{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Gg{
+    width:85vw;
+    max-width: 900px;
+    height: 1300px;
+    margin-top: 50px;
+    border-style: none;
+}
+
+.Footer{
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(30,108,147,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+a:link.white{
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .Option{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SmallContainer{
+        margin-bottom: 50px;
+    }
+    .firstImage{
+        height: 500px;
+    }
+}

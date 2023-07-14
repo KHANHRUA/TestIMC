@@ -1,0 +1,345 @@
+.Container{
+    width: 100vw;
+    height: 56px;
+    background-color: inherit;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.ContainerAnimationOn{
+    animation: On 0.5s;
+    opacity: 1;
+    animation-delay: 0ms;
+}
+
+@keyframes On {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.ContainerAnimationOff{
+    animation: Off 1s;
+    opacity: 0;
+    animation-delay: 0ms;
+}
+
+@keyframes Off {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.Empty{
+    width: 48px;
+    height: 56px;
+}
+
+.MenuContain{
+    width: 48px;
+    height: 56px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.Temp{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.Modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    cursor: default;
+}
+
+.modalContent {
+    background-color: rgb(33, 33, 33);
+    width: 300px;
+    position: fixed;
+    height: 100vh;
+    top:0px;
+    z-index: 4;
+    cursor: default;
+    left: 0;
+    animation: Open 0.5s;
+}
+
+@keyframes Open {
+	from {
+		transform: translateX(-300px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.Menu{
+    width: 16px;
+    height: 16px;
+    animation-name: rotateLeft;
+    animation-duration: 0.7s;
+}
+
+.MenuTemp{
+    width: 16px;
+    height: 16px;
+    animation-name: rotateRight;
+    animation-duration: 0.7s;
+}
+
+@keyframes rotateLeft {
+    from {rotate:0deg;font-size: 24px;}
+    to {rotate: -180deg;font-size: 24px;}
+}
+
+@keyframes rotateRight {
+    from {rotate: 0deg;font-size: 24px;}
+    to {rotate: 180deg;font-size: 24px;}
+}
+
+.Temp:hover{
+    background-color: rgb(73, 73, 73);
+}
+
+.Routes{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    top: 60px;
+    left: 0px;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.Route{
+    width: 200px;
+    font-size: 18px;
+    margin: 12px 12px 12px 40px;
+    color: white;
+    text-decoration: none;
+    animation: OpenRoutes 0.5s;
+    animation-fill-mode: both;
+} 
+
+@keyframes OpenRoutes {
+	from {
+		transform: translateX(-300px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.Route:nth-child(1) {
+    animation-delay: 0s;
+}
+  
+.Route:nth-child(2) {
+    animation-delay: 0.1s;
+}
+  
+.Route:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.Route:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.Route:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+
+.Route:hover{
+    color: rgb(73,170,212) !important;
+}
+
+.Logo{
+    max-height: 56px;
+    max-width: 225px;
+    padding: 8px 4px 8px 12px;
+    vertical-align: middle;
+}
+
+.LogoAlign{
+    display: flex;
+    justify-content: left;
+    min-width: 280px;
+    width: 15vw;
+    align-items: center;
+    color: rgb(199, 199, 199);
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.Text{
+    margin: 16px 12px 16px 12px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.Control{
+    position: fixed;
+    width: 80vw;
+    height: 56px;
+    top: 0px;
+    right: 48px;
+    background-color: inherit;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.Pages{
+    color: rgba(255, 255, 255);
+    font-size: 16px;
+    padding: 10px 12px 10px 12px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.Pages:hover{
+    opacity: 0.85 !important;
+}
+
+.Page{
+    color: rgba(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 12px 10px 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Page:hover{
+    color: rgba(73, 170, 212, 0.749);
+    opacity: 0.85 !important;
+}
+
+.IconAlign{
+    width: 48px;
+    height: 48px;
+    margin: 4px 0px 4px 0px;
+    background-color: inherit;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Icon{
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.SearchContain{
+    width: 100vw;
+    height: 76px;
+    position: fixed;
+    z-index: 5;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.AnimationOn{
+    animation: OpenSearch 0.5s;
+}
+
+@keyframes OpenSearch {
+	from {
+		transform: translateX(100vw);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.Search{
+    width: 50vw;
+    min-width: 350px;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 2px rgb(185, 185, 185);
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.Icons{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Input{
+    width: 40vw;
+    height: 32px;
+    border-style: none;
+    background-color: inherit;
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Input:focus{
+    outline: none;
+}
+
+.OutArrow{
+    position: absolute;
+    left: 15px;
+    top:0px;
+    font-size: 32px;
+    width: 76px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .Control{
+        display: none;
+    }
+    .Input{
+        width: 75vw;
+        max-width: 280px;
+    }
+}
