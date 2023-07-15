@@ -498,6 +498,138 @@
                     OwlH custom configurations
                 </div>    
             </div>
+            <div class="seventhFooter">
+                <div class="Text">
+                    <h3>
+                        There are many other ways to configure OwlH components to meet your traffic analysis, forensics and network IDS management needs.
+                    </h3>
+                    <div class="Display">
+                        <h3>
+                            Send us an email and we will help you. 
+                        </h3>
+                        <a href="mailto:support@owlh.net">
+                            support@owlh.net
+                        </a>
+                    </div>
+                    <h4>
+                        Few samples are:
+                    </h4>
+                </div>
+            </div>
+            <div class="eighthFooter">
+                <div class="Text2">
+                    <h2 class="default">Traffic forwarding and Forensics analysis with Moloch.</h2>
+                    <div class="br"></div>
+                    <h4>Collect your traffic, analyze it and forward it to a central console to be able to forensics your traffic with Moloch.</h4>
+                </div>
+            </div>
+            <div class="eighthFooter">
+                <div class="Text2">
+                    <h2 class="default">Cloud based PCAP analysis.</h2>
+                    <div class="br"></div>
+                    <h4>you don't need to have your Network IDS locally. Just upload your PCAP to your OwlH Cloud environment and see results in your Wazuh SaaS.</h4>
+                </div>
+            </div>
+            <div class="fourthFooter">
+                <div class="fourthText Text1">
+                    Network IDS management
+                </div>    
+            </div>
+            <div class="secondPictureContain">
+                <div class="secondPictures">
+                    <div>
+                        <img class="thirdPicture" src="../../assets/6,1.png">
+                    </div>
+                    <div class="AlignLi">
+                        <ul>
+                            <li class="">Suricata and Zeek support</li>
+                            <li>Centralized Management</li>
+                            <li>Ruleset and Policies Management </li>
+                            <li>Network Interface, Kernel and NIDS  Fine Tuning</li>
+                            <li>Traffic Capture:
+                                <li class="LiChild">Security Alerts.</li>
+                                <li class="LiChild">Traffic and Protocol Analysis.</li>
+                                <li class="LiChild">Anomalies Detection.</li>
+                            </li>
+                            <li>Integration with ELK and other 3rd party Storage/Visualization Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fourthFooter">
+                <div class="fourthText Text1">
+                    Are you a Wazuh user?
+                </div>    
+            </div>
+            <div class="ninthFooter">
+                <div class="ninthTexts">
+                    <div class="ninthPictures">
+                        <img class="ninthPicture" src="../../assets/7,1.png">
+                        <div>
+                            Visualization
+                            <a href="www.wazuh.com">www.wazuh.com</a>
+                        </div>
+                    </div>
+                    <div class="ninthText">
+                        Easily add Network IDS visibility to your Wazuh console
+                        <div class="br"></div>
+                        Wazuh agent for NIDS output transport
+                        <div class="br"></div>
+                        Wazuh decoders/rules for Suricata and Zeek
+                        <div class="br"></div>
+                        Single pane of glass - OwlH Dashboards in Kibana as well as Wazuh app
+                    </div>
+                </div>
+            </div>
+            <div class="fourthFooter">
+                <div class="fourthText Text1">
+                    PCI-DSS mapping for Network IDS Alerts
+                </div>    
+            </div>
+            <div class="fifthFooter">
+                <div class="Left">
+                    <iframe src="https://drive.google.com/file/d/1CK-ZLQMFfoIKKqvhB39PoxUBwQ1fyRkY/preview" width="100%" height="350" allow="autoplay"></iframe>
+                </div>
+                <div class="Right2">
+                    <div class="rightTop">
+                        <h3>
+                            NIDS rules and PCI-DSS v.3.2.1 Mapping
+                        </h3>
+                        <div class="br"></div>
+                        <h3>
+                            see impacted PCI controls 
+                        </h3>
+                        <div class="br"></div>
+                        <h3>
+                            Rules to environment and PCI control customization
+                        </h3>    
+                    </div>
+                    <div class="leftBottom">
+                        <a href="https://documentation.owlh.net/en/latest/main/OwlHPCI.html" style="color: white;">
+                            Documentation
+                        </a>
+                    </div>
+                </div>    
+            </div>
+            <div class="sixthFooter">
+                
+            </div>
+            <div class="Footer">
+                <div class="footerPicture">
+                    <img class="lastPicture" src="../../assets/service.png">
+                    <div class="lastText">
+                        <a href="mailto:support@owlh.net" style="color: white;">
+                            support@owlh.net
+                        </a>
+                        <a href="https://documentation.owlh.net/en/0.17.0/" style="color: white;">
+                            Documentation
+                        </a>
+                    </div>
+                    <a href="https://github.com/OwlH-net" target="_blank">
+                        <img  class="lastPicture" src="../../assets/git.png">   
+                    </a>
+                </div>
+            </div>
     </div>
 </template>
 
@@ -513,14 +645,23 @@ import 'swiper/css/pagination';
 
 <script>
 export default {
+    data() {
+    return {
+      pdf: 'https://drive.google.com/file/d/1wd2k9RRWW7F8EsHXn4QDwuyQeuYeUtMi/view?usp=sharing',
+    };
+  },
     mounted() {
-        const swiper = new Swiper('.swiper', {
+        var swiper = new Swiper('.swiper', {
             // Optional parameters
             // direction: 'horizontal',
+            slidesPerView: 'auto',
             modules: [Navigation, Pagination],
             loop: true,
             grabCursor: true,
-
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction:false  
+            },
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
