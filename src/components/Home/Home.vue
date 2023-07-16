@@ -11,26 +11,26 @@
                 </div>
                 <div class="Option">
                     <div class="SmallContainer">
-                        <button class="Button">
+                        <Router-link to="/community" class="Button" style="text-decoration: none;">
                             OwlH is open source
-                        </button>
+                        </Router-link>
                         <div class="white">
                             Flexible, scalable, no vendor lock-in and no license cost.
                             <a href="https://owlh.slack.com/" target="_blank" class="white">Join us on Slack</a>
                         </div>
                     </div>
                     <div class="SmallContainer">
-                        <button class="Button">
+                        <Router-link to="/getting-started" class="Button" style="text-decoration: none;">
                             Start using OwlH
-                        </button>
+                        </Router-link>
                         <div class="white">
                             We will help you to be successful with your Owlh first deployment
                         </div>
                     </div>
                     <div class="SmallContainer">
-                        <button class="Button">
+                        <Router-link to="/community" class="Button" style="text-decoration: none;">
                             How can we help you
-                        </button>
+                        </Router-link>
                         <div class="white">
                             Become part of our Open Source 
                             <Router-link to="/community" class="white">Community</Router-link>
