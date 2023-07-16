@@ -35,7 +35,9 @@
             <div class="LogoAlign">
                 <div v-if="bool" id = "Menu" class="Empty">
             </div>
-            <img  class="Logo" src ="../../assets/EmbeddedImage.png" alt="error"/>
+            <Router-link to="/">
+                <img  class="Logo" src ="../../assets/EmbeddedImage.png" alt="error"/>
+            </Router-link>
             <div class="Text">
                 <span>v0.17.x</span>
             </div>
